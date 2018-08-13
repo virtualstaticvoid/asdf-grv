@@ -1,0 +1,15 @@
+language: c
+
+script: asdf plugin-test grv https://github.com/virtualstaticvoid/asdf-grv.git "grv --version"
+
+before_script:
+  - git clone --branch v0.5.1 https://github.com/asdf-vm/asdf.git asdf
+  - . asdf/asdf.sh
+
+os:
+  - linux
+
+addons:
+  apt:
+    packages:
+    - jq
