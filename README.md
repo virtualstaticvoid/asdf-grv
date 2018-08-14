@@ -14,4 +14,4 @@ asdf plugin-add grv https://github.com/virtualstaticvoid/asdf-grv.git
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for instructions on how to install & manage versions of grv.
 
-[util]: https://github.com/solo-io/grv
+[util]: https://github.com/rgburke/grv
