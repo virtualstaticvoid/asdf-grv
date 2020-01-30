@@ -1,6 +1,6 @@
 language: c
 
-script: asdf plugin-test grv https://github.com/virtualstaticvoid/asdf-grv.git "grv --version"
+script: asdf plugin-test grv $TRAVIS_BUILD_DIR "grv --version"
 
 before_script:
   - git clone --branch master --depth=1 https://github.com/asdf-vm/asdf.git asdf
