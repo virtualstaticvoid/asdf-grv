@@ -1,15 +1,14 @@
 language: c
 
-script: asdf plugin-test grv $TRAVIS_BUILD_DIR "grv --version"
+os:
+  - linux
+  # - osx
 
 before_script:
   - git clone --branch master --depth=1 https://github.com/asdf-vm/asdf.git asdf
-  - . asdf/asdf.sh
+  - source asdf/asdf.sh
+  # workaround: asdf plugin-test assumes master branch
+  - cd $TRAVIS_BUILD_DIR && git checkout -b master || echo 'Already on master'
 
-os:
-  - linux
-
-addons:
-  apt:
-    packages:
-    - jq
+script:
+  - asdf plugin-test grv $TRAVIS_BUILD_DIR "grv --version"
