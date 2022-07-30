@@ -8,6 +8,7 @@
 
 ```
 asdf plugin-add grv https://github.com/virtualstaticvoid/asdf-grv.git
+asdf install grv latest
 ```
 
 ## Use
