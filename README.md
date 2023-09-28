@@ -1,6 +1,6 @@
 # asdf-grv
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/virtualstaticvoid/asdf-grv/Main%20Workflow?style=flat-square)](https://github.com/virtualstaticvoid/asdf-grv/actions)
+[![Main Workflow](https://github.com/virtualstaticvoid/asdf-grv/actions/workflows/workflow.yml/badge.svg)](https://github.com/virtualstaticvoid/asdf-grv/actions/workflows/workflow.yml)
 
 [`grv`][util] plugin for [asdf](https://github.com/asdf-vm/asdf) version manager
 
